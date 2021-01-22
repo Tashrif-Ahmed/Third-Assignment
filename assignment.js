@@ -3,7 +3,7 @@
 /* #1 this function will convert kilometers to meters */
  function kilometerToMeter(km) {  // km = kilometer 
     var m  // m = meter
-    var error="This value can't be a kilometer value, please try another value."
+    var error="wrong input , please try again"
     if(km >= 0){
         m = km*1000;         
         return m;
@@ -14,21 +14,21 @@
      
  }
 
- var meter = kilometerToMeter(8)
+ var meter = kilometerToMeter(6)
  console.log(meter)
 
 
 
 
 
-// #2 this function will give me total cost the products i have ordered
+// #2 this function will give me total cost of the products I have ordered
 
 function budgetCalculator(watch, phone, laptop) {
     var watchPrice = 50;
     var phonePrice = 100;
     var laptopPrice = 500;
     var total
-    error2 = "wrong value , please try again"
+    error2 = "wrong input , please try again"
     if(watch < 0 || phone < 0 || laptop < 0 ){
         return error2;
     }
@@ -37,7 +37,7 @@ function budgetCalculator(watch, phone, laptop) {
         return total;
     }
 }
-totalPrice = budgetCalculator(2,9,1);
+totalPrice = budgetCalculator(5,3,2);
 console.log(totalPrice);
 
 
@@ -45,7 +45,7 @@ console.log(totalPrice);
 // #3 this function will calculate my cost in hotle
 
 function hotelCost(days) {
-    var error = "not number of days"
+    var error = "wrong input , please try again"
     if (days >= 0 && days <= 10) {
         var totalCost = days*100;
         return totalCost;
@@ -70,7 +70,7 @@ function hotelCost(days) {
         return error;
     }
 }
-var hotleStayingCost = hotelCost(75);
+var hotleStayingCost = hotelCost(27);
 console.log(hotleStayingCost);
 
 
@@ -101,5 +101,5 @@ function megaFriend(names) {
     }
     return largestNames;
 }
-friendNames = megaFriend(["Rafi", "Riaj", "Siam", "abcgef", "Mrinmoy", "Nrinmoy","Drinmoy","Saif"])
+friendNames = megaFriend(["Rafi", "Jrinmoy", "Siam", "abcgef", "Mrinmoy", "Nrinmoy","Drinmoy","Saif"])
 console.log(friendNames);
